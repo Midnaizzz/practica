@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Desplegable</title>
+    <style>
+        /* Estilo general para el menú */
+        .navbar {
+            background-color: rgb(243, 96, 172);
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(225, 214, 214);
+            color: rgb(141, 0, 80);
+        }
+
+        
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 20px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1acce;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar"> 
+        <a href="#inicio">Inicio</a> 
+        <a href="#servicios">Acerca de</a>
+        <div class="dropdown"> 
+            <button class="dropbtn">Menú Desplegable &#9662; </button>
+            <div class="dropdown-content"> 
+                <a href="#opcion1">Opción 1</a> 
+                <a href="#opcion2">Opción 2</a>
+                <a href="#opcion3">Opción 3</a>
+            </div>
+        </div> <a href="#contacto">Contacto</a>
+    </div>
+</body>
+
+</html>
